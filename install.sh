@@ -20,7 +20,7 @@ PATCH_REPO_URL="https://github.com/kingKzK/FlatCAM-FedoraKDE-Installer.git"
 
 FLATCAM_REPO_URL="https://bitbucket.org/marius_stanciu/flatcam_beta"
 INSTALL_DIR="$HOME/FlatCAM_Beta"
-TEMP_PATCH_DIR="/tmp/flatcam_patches_temp"
+TEMP_PATCH_DIR="$INSTALL_DIR/flatcam_patches_temp"
 
 echo -e "${BLUE}=== Starting FlatCAM (Beta) Setup for Fedora ===${NC}"
 echo -e "${BLUE}=== Wrappper & Patches by Erick Ruiz ===${NC}"
@@ -75,8 +75,8 @@ echo -e "${GREEN}[5/7] Installing Python libraries (This may take a minute)...${
 
 # We use the requirements.txt downloaded from YOUR repo, not the old one from FlatCAM
 # This ensures gdal==3.11.5 and numpy<2 are used automatically.
-if [ -f "$TEMP_PATCH_DIR/requirements.txt" ]; then
-    pip install -r "$TEMP_PATCH_DIR/requirements.txt"
+if [ -f "$TEMP_PATCH_DIR/patches/requirements.txt" ]; then
+    pip install -r "$TEMP_PATCH_DIR/patches/requirements.txt"
 else
     echo -e "${RED}Error: requirements.txt not found in the patch repository!${NC}"
     exit 1
@@ -92,7 +92,7 @@ cp "$TEMP_PATCH_DIR/patches/FlatCAM.py" "$INSTALL_DIR/FlatCAM.py"
 
 # Patch 2: Import fixes for tclCommands
 # Note: Ensure your file in github is named 'tclCommands_init.py' inside the patches folder
-cp "$TEMP_PATCH_DIR/patches/tclCommands_init.py" "$INSTALL_DIR/tclCommands/__init__.py"
+cp "$TEMP_PATCH_DIR/patches/__init__.py" "$INSTALL_DIR/tclCommands/__init__.py"
 
 # Clean up temp files
 rm -rf "$TEMP_PATCH_DIR"
