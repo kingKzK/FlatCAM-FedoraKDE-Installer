@@ -40,7 +40,7 @@ Open your terminal and run:
 
 ```bash
 # 1. Clone this repository
-git clone [https://github.com/TU_USUARIO/FlatCAM-Fedora-Installer.git](https://github.com/kingKzK/FlatCAM-FedoraKDE-Installer.git)
+git clone https://github.com/kingKzK/FlatCAM-FedoraKDE-Installer.git
 cd FlatCAM-Fedora-Installer
 
 # 2. Make the script executable
