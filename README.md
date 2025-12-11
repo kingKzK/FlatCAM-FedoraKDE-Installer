@@ -41,7 +41,7 @@ Open your terminal and run:
 ```bash
 # 1. Clone this repository
 git clone https://github.com/kingKzK/FlatCAM-FedoraKDE-Installer.git
-cd FlatCAM-Fedora-Installer
+cd FlatCAM-FedoraKDE-Installer
 
 # 2. Make the script executable
 chmod +x install.sh
