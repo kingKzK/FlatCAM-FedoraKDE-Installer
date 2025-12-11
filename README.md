@@ -48,3 +48,23 @@ chmod +x install.sh
 
 # 3. Run the installer
 ./install.sh
+
+```
+## ⚖️ Credits & Acknowledgements
+This project is merely a compatibility layer. All credit for the application itself goes to the original authors:
+
+Original Author: Juan Pablo Caram (Original FlatCAM).
+
+Current Maintainer & Qt5 Port: Marius Stanciu.
+
+A special acknowledgment to Marius for his massive effort in maintaining the Beta branch and porting the entire codebase from Qt4 to Qt5. Without his work updating the GUI framework, running FlatCAM on modern Linux distributions (like Fedora 43) would be impossible today.
+
+Source Code: Bitbucket - Marius Stanciu
+
+Fedora Installer & Patches: Developed by Erick Ruiz.
+
+Patches provided: Python 3.12 importlib fix, Wayland/Dark Mode visual override, and automated dependency resolution script.
+
+## 📄 License
+The installer script and patches in this repository are open source. FlatCAM itself is distributed under the MIT License.
+
