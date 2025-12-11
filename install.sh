@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 # ------------------------------------------------------------------------------
 # CONFIGURATION VARIABLES
 # ------------------------------------------------------------------------------
-PATCH_REPO_URL="https://github.com/TU_USUARIO/FlatCAM-Fedora-Installer.git"
+PATCH_REPO_URL="https://github.com/kingKzK/FlatCAM-FedoraKDE-Installer.git"
 
 FLATCAM_REPO_URL="https://bitbucket.org/marius_stanciu/flatcam_beta"
 INSTALL_DIR="$HOME/FlatCAM_Beta"
